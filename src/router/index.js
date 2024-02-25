@@ -25,7 +25,7 @@ const router = createRouter({
       meta: {
         requiresAuth: true
       },
-      component: () => import('../views/AboutView.vue'),
+      component: () => import('../views/ManageView.vue'),
       beforeEnter: (to, from, next) => {
         console.log('Manage Route Guard')
         next()
