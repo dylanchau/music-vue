@@ -7,12 +7,15 @@
     </transition>
   </router-view>
 
+  <app-player />
+
   <app-modal />
 </template>
 
 <script setup>
 import AppModal from './components/AuthComponent.vue'
 import AppHeader from '@/components/HeaderComponent.vue'
+import AppPlayer from '@/components/PlayerComponent.vue'
 import { onMounted } from 'vue'
 import { useAuthStore } from '@/stores'
 
