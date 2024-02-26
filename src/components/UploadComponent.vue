@@ -38,6 +38,17 @@
       </div>
     </div>
   </div>
+  <div class="card">
+    <Card>
+      <template #title>Simple Card</template>
+      <template #content>
+        <FloatLabel>
+          <InputText id="username" />
+          <label for="username">Username</label>
+        </FloatLabel>
+      </template>
+    </Card>
+  </div>
 </template>
 
 <script setup>

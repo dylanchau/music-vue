@@ -74,9 +74,6 @@ const onSubmit = handleSubmit(async (values) => {
     console.log(values)
     const { email, password } = values
     await store.login(email, password)
-    await new Promise((resolve) => {
-      setTimeout(() => resolve(values), 3000)
-    })
   } catch (error) {
     login_in_submission.value = false
     login_alert_variant.value = 'bg-red-500'
